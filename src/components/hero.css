@@ -1,0 +1,106 @@
+
+.hero {
+    background-color: #fff;
+  }
+  
+  .hero_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 0px;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero_container {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      height: 100%;
+    }
+    .hero_container .responsve {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  .hero_container_left {
+    color: #7782e6;
+    line-height: 1.2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero_container_left {
+      padding: 5rem 0;
+    }
+    .hero_container_left .responsve {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 280px) {
+    .hero_container_left {
+      line-height: 1.5;
+    }
+  }
+  
+  .hero_container_left h1 {
+    font-size: 4rem;
+    color: #7782e6;
+  }
+  
+  @media screen and (max-width: 280px) {
+    .hero_container_left h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .hero_container_left p {
+    font-size: 2.5rem;
+    color: #7782e6;
+  }
+  
+  @media screen and (max-width: 280px) {
+    .hero_container_left p {
+      font-size: 1rem;
+    }
+  }
+  
+  .hero_container .hero_container_btn {
+    font-size: 1rem;
+    background-color: #7782e6;
+    color: #fff;
+    padding: 14px 32px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-top: 2rem;
+  }
+  
+  .hero_container .hero_container_btn:hover {
+    background-color: #fff;
+    color: #7782e6;
+    border: 1px solid;
+    cursor: pointer;
+  }
+  
+  .hero_container .hero_container_btn a {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .hero_container_right img {
+    margin: 10xp;
+    height: 45%;
+    width: 100%;
+    border: none;
+    border-radius: 20px;}
