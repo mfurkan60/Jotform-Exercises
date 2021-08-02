@@ -1,0 +1,72 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "React1",
+      "content": "React Native content1"
+    },
+    {
+      "id": 2,
+      "title": "React2",
+      "content": "React Native content2"
+    },
+    {
+      "id": 3,
+      "title": "React3",
+      "content": "React Native content3"
+    },
+    {
+      "id": 4,
+      "title": "React4",
+      "content": "React Native content4"
+    }
+  ],
+  "comments ": [
+    {
+      "id ": 1,
+      "content": "Contente Comments1 here",
+      "articleId": 1
+    },
+    {
+      "id ": 2,
+      "content": "Contente Comments2 here",
+      "articleId": 2
+    },
+    {
+      "id ": 3,
+      "content": "Contente Comments3 here",
+      "articleId": 3
+    },
+    {
+      "id ": 4,
+      "content": "Contente Comments4 here",
+      "articleId": 4
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "fullname": "JohnDoe1"
+    },
+    {
+      "id": 2,
+      "fullname": "JohnDoe2"
+    },
+    {
+      "id": 3,
+      "fullname": "JohnDoe3"
+    },
+    {
+      "id": 4,
+      "fullname": "JohnDoe4"
+    },
+    {
+      "id": 5,
+      "fullname": "JohnDoe5"
+    },
+    {
+      "id": 6,
+      "fullname": "JohnDoe6"
+    }
+  ]
+}
