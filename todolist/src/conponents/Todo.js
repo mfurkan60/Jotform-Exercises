@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {useMemo, useCallback} from 'react';
 //import Component 
  
 
 const Todo = ({text,id, todo, toDos,setToDos}) =>{
     //Delete from list
-    const deleteHandler = () =>{
+    const deleteHandler =  useCallback(() =>{
         setToDos(toDos.filter((el)=> el.id !== todo.id));
     
-    };
+    },[]);
+    console.log("Todo Component rendering");
     return(
     <div className="todo">
  <button className="id-value">{id}</button>

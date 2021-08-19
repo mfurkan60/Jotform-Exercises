@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {memo} from 'react';
 
-const Header = () =>{
+const Header = memo((props) =>{
+    console.log("Header rendering");
     return(
+            
         <div>
           <header>
-         <h1> MasterWeb2000 Todo List </h1>
-       </header>
-       
-    </div>
-    );
-}
+         <h1> {props.title} </h1>
+          </header>
+       </div>
+
+)});
 
 export default Header;
-

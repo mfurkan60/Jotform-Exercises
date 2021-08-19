@@ -1,11 +1,21 @@
-import React from 'react';
+import React, {useCallback, useState } from 'react';
+import ToDoList from './ToDoList';
 
-const Form = ({setInputText, setToDos, toDos, inputText}) =>{
-    const inputTextHandler = (e) =>{
-        
+
+const Form = () =>{
+  const [inputText,setInputText] = useState("");
+  const [toDos, setToDos] = useState([]);
+
+
+    const inputTextHandler = useCallback( (e) =>{
+      //console.log("İnput Degeri algılandı")
+
        setInputText(e.target.value);
-    };
+    }, [setInputText]);
+
     const submitTodoHandler = (e)=>{
+      console.log("sumbit to do Handler");
+      
        e.preventDefault();
        setToDos([
             ...toDos,
@@ -13,8 +23,10 @@ const Form = ({setInputText, setToDos, toDos, inputText}) =>{
        ]);
        setInputText(e.target.value = "");
     }
+    console.log("form component rendering");
     return(
         <div>
+          
             <form>
       <input value={inputText} onChange={inputTextHandler} type="text" class="todo-input" />
       <button onClick={submitTodoHandler} className="todo-button" type="submit">
@@ -29,9 +41,11 @@ const Form = ({setInputText, setToDos, toDos, inputText}) =>{
         </select>
       </div>
     </form>
+
+    <ToDoList toDos={toDos} setToDos={setToDos}  />
     </div>
+    
     );
 }
 
 export default Form;
-
